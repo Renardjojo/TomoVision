@@ -575,7 +575,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 572730069f8c4744bb045392258957db,
+      objectReference: {fileID: 21300000, guid: 283ac564034be9a45bcddfa9708f6143,
         type: 3}
     - target: {fileID: 3332926073794475977, guid: 6d536555a075ed44b922a38fce21c238,
         type: 3}
@@ -1049,11 +1049,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4654533558712096122, guid: 13f65fdfea09a3d47a849332e49078c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2967749546067561419, guid: 13f65fdfea09a3d47a849332e49078c5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 658d5c4f13913df46bee5de04a108bd1,
+      objectReference: {fileID: 21300000, guid: 17992d460ec64504fa5a075f00d845fd,
         type: 3}
     - target: {fileID: 5536036927306514369, guid: 13f65fdfea09a3d47a849332e49078c5,
         type: 3}
@@ -1158,7 +1163,7 @@ GameObject:
   - component: {fileID: 735032720}
   - component: {fileID: 735032719}
   m_Layer: 0
-  m_Name: Women
+  m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1172,15 +1177,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735032717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 120}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 114}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 631135398}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -218, y: -42}
+  m_AnchoredPosition: {x: -226, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735032719
@@ -1203,7 +1208,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9ce54cbb471eabf44a5e3c97be46465e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e456cb2555af35b45bbd56404d08b640, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
