@@ -22,9 +22,4 @@ public class InputController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {}
-
-    public void UnselectCurrentSelectedElement()
-    {
-        eventSystem.currentSelectedGameObject.GetComponent<Selectable>()?.Unselect();
-    }
 }
