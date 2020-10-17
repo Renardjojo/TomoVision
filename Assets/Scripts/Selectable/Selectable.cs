@@ -1,24 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+ using UnityEngine.EventSystems;
 using UnityEngine;
 
-public class Selectable : MonoBehaviour
+public class Selectable : MonoBehaviour, IDeselectHandler, ISelectHandler
 {
-    protected SpriteRenderer spriteRenderer;
+    protected Image image;
     protected bool bIsSelected = false;
 
     // Start is called before the first frame update
     protected void Awake()
     {
-       spriteRenderer = GetComponent<SpriteRenderer>(); 
+       image = GetComponent<Image>();
+       image.material = new Material(image.material);
     }
 
     protected void Start()
-    {}
+    {
+        image.alphaHitTestMinimumThreshold = 0.5f;
+    }
 
     void Update()
     {}
-
     public void Select()
     {
         bIsSelected = true;
@@ -41,27 +45,31 @@ public class Selectable : MonoBehaviour
     {
         if (bNewFlag)
         {
-            spriteRenderer.material.SetFloat("_OutlineEnabled", 1f);
+            image.material.SetFloat("_OutlineEnabled", 1f);
         }
         else
         {
-            spriteRenderer.material.SetFloat("_OutlineEnabled", 0f);
+            image.material.SetFloat("_OutlineEnabled", 0f);
         }
     }
 
     public void SetOutlineThickness(float NewThickness)
     {
-        spriteRenderer.material.SetFloat("_Thickness", NewThickness);
+        image.material.SetFloat("_Thickness", NewThickness);
     }
 
     public void SetOutlineColor(Color NewColor)
     {
-        MaterialPropertyBlock mpb = new MaterialPropertyBlock();
-        spriteRenderer.GetPropertyBlock(mpb);
-
-        mpb.SetColor("_SolidOutline", NewColor);
-
-        spriteRenderer.SetPropertyBlock(mpb);
+        image.material.SetColor("_SolidOutline", NewColor);
     }
 
+    public void OnSelect(BaseEventData eventData)
+    {
+        Select();
+    }
+
+    public void OnDeselect(BaseEventData eventData)
+    {
+        Unselect();
+    }
 }

@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
  
 public class InputController : MonoBehaviour
 {
-    [SerializeField]
-    LayerMask layerValidForSelection = 128;
+    EventSystem eventSystem;
 
-    Selectable currentObjectSelected = null;
+    void Awake()
+    {
+        eventSystem = GetComponent<EventSystem>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -18,26 +21,10 @@ public class InputController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {}
+
+    public void UnselectCurrentSelectedElement()
     {
-        if (Input.GetMouseButtonDown(0))
-        {      
-            RaycastHit2D rayHit = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, layerValidForSelection);
-
-            if (rayHit)
-            {
-                if (currentObjectSelected != null)
-                {
-                    currentObjectSelected.Unselect();
-                }
-
-                currentObjectSelected = rayHit.transform.gameObject.GetComponent<Selectable>();
-                currentObjectSelected.Select();
-            }
-            else if (currentObjectSelected != null)
-            {
-                currentObjectSelected.Unselect();
-                currentObjectSelected = null;
-            }
-        } 
+        eventSystem.currentSelectedGameObject.GetComponent<Selectable>()?.Unselect();
     }
 }
