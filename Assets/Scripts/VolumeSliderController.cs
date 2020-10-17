@@ -21,7 +21,7 @@ public class VolumeSliderController : MonoBehaviour
 
     public void UpdatePictureVolume()
     {
-        image.sprite = sprites[(int)(AudioListener.volume * sprites.Length)];
+        image.sprite = sprites[(int)(AudioListener.volume * (sprites.Length - 1))];
     }
 
     public void ChangeGeneralVolume(float newVolume)

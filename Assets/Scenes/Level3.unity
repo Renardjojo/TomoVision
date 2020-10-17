@@ -349,7 +349,7 @@ PrefabInstance:
     - target: {fileID: 2594371557332422655, guid: 0e093ba25034a7b4a85f3e88805a9e49,
         type: 3}
       propertyPath: OnLevelEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadNewSceneWithName
+      value: BroadcastMessage
       objectReference: {fileID: 0}
     - target: {fileID: 2594371557332422655, guid: 0e093ba25034a7b4a85f3e88805a9e49,
         type: 3}
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 2594371557332422655, guid: 0e093ba25034a7b4a85f3e88805a9e49,
         type: 3}
       propertyPath: OnLevelEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Menu
+      value: EndLoopCredit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e093ba25034a7b4a85f3e88805a9e49, type: 3}
