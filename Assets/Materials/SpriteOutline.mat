@@ -32,7 +32,7 @@ Material:
     - _AlphaThreshold: 0
     - _Angle: 45
     - _ConnectedAlpha: 0
-    - _OutlineEnabled: 1
+    - _OutlineEnabled: 0
     - _OutlineMode: 0
     - _OutlinePosition: 0
     - _OutlineShape: 0
