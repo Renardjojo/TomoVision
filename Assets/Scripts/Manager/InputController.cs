@@ -6,7 +6,7 @@ using UnityEngine;
 public class InputController : MonoBehaviour
 {
     [SerializeField]
-    LayerMask layerValidForSelection = 8;
+    LayerMask layerValidForSelection = 128;
 
     Selectable currentObjectSelected = null;
 

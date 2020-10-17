@@ -23,7 +23,6 @@ public class Selectable : MonoBehaviour
     {
         bIsSelected = true;
         SetOutlineEnable(true);
-        Debug.Log("ok");
     }
 
     public void Unselect()
