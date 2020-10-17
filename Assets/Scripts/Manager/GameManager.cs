@@ -1,12 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.EventSystems;
+﻿using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 using UnityEngine;
 
 
 public class GameManager : MonoBehaviour
 {
     EventSystem eventSystem;
+
+    public uint CurrentScore { get; set; }
+
+    [SerializeField]
+    protected const uint maxScore = 4;
+
+    public UnityEvent OnLevelEnd;
 
     void Awake()
     {
@@ -22,8 +29,17 @@ public class GameManager : MonoBehaviour
     void CheckIfItemIsValid()
     {
         Debug.Log(eventSystem.firstSelectedGameObject.gameObject.tag);
+    }
 
+    public uint GetMaxScore() { return maxScore; }
 
+    public void IncreaseScore()
+    {
+        CurrentScore++;
+        if (CurrentScore >= maxScore)
+        {
+            OnLevelEnd?.Invoke();
+        }
     }
 }
 

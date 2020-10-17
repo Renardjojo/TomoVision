@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.EventSystems;
- using UnityEngine.Events;
+﻿using UnityEngine.EventSystems;
+using UnityEngine.Events;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class RxObject : MonoBehaviour, IPointerDownHandler
@@ -24,14 +23,28 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
         {
             Debug.Log("echec");
         }
+
+        Hide(true);
+    }
+
+    public void Hide(bool bFlag)
+    {
+        if (bFlag)
+        {
+            GetComponent<Image>().color = Color.black;
+        }
+        else
+        {
+            GetComponent<Image>().color = new Color(255, 255, 255, 255);
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (eventData.selectedObject.tag == eventData.lastPress.tag)
+        if (tag == eventData.lastPress.tag)
         {
-            eventData.lastPress.SetActive(false);
-            eventData.selectedObject.SetActive(false);
+            eventData.lastPress.GetComponent<Item>().ValidItem();
+            Hide(false);
 
             OnElemCombinSuccess?.Invoke();
         }
