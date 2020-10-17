@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Tacos
-  - Tacos2
-  - Licorne
+  - Item1
+  - Item2
+  - Item3
+  - Item4
   layers:
   - Default
   - TransparentFX
