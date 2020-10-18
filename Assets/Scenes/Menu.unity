@@ -2963,8 +2963,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Play
+      - m_Target: {fileID: 824995777}
+        m_MethodName: QuiteGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
