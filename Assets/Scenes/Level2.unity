@@ -888,5 +888,35 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b7ce6e24e822ab544a733612f58927c6,
         type: 3}
+    - target: {fileID: 2415746562532351895, guid: 6c052b1eabe56974483ec322e0ff00d1,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415746562532351894, guid: 6c052b1eabe56974483ec322e0ff00d1,
+        type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415746562532351894, guid: 6c052b1eabe56974483ec322e0ff00d1,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415746562532351894, guid: 6c052b1eabe56974483ec322e0ff00d1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415746562532351894, guid: 6c052b1eabe56974483ec322e0ff00d1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415746562532351894, guid: 6c052b1eabe56974483ec322e0ff00d1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c052b1eabe56974483ec322e0ff00d1, type: 3}
