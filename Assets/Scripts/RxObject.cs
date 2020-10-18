@@ -40,13 +40,6 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
             Debug.Log(GetComponent<Image>().color.ToString());
             GetComponent<Image>().color = new Color(255, 255, 255, 255);
         }
-
-        isHiden = bFlag;
-    }
-
-
-    private void Update() {
-        Debug.Log(isHiden + "   " + tag.ToString());
     }
 
     public void OnPointerDown(PointerEventData eventData)
