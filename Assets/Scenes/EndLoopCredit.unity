@@ -1076,7 +1076,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: aab081629043eef42bdab735e128b3e0, type: 3}
   - {fileID: 21300000, guid: 795b38da222d82046b5a0111faf89f48, type: 3}
-  - {fileID: 21300000, guid: aab081629043eef42bdab735e128b3e0, type: 3}
+  - {fileID: 21300000, guid: b4fde6e8b4d4d9d4b94c039046ce44c5, type: 3}
   FadeRate: 2
   WaitDuration: 3
 --- !u!114 &967585956
