@@ -127,6 +127,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6440232839039719722, guid: 6d536555a075ed44b922a38fce21c238,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f049d52cda9b914a88c68294d809d12, type: 3}
     - target: {fileID: 3332926075617979938, guid: 6d536555a075ed44b922a38fce21c238,
         type: 3}
       propertyPath: m_Name
@@ -639,6 +644,21 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7065504692737032298, guid: 6d536555a075ed44b922a38fce21c238,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a3798544938c17a40841937fbf57a85e, type: 3}
+    - target: {fileID: 5893737887618420918, guid: 6d536555a075ed44b922a38fce21c238,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a6008d9602ca1741a47c8b1ff37de15, type: 3}
+    - target: {fileID: 3732951822454638043, guid: 6d536555a075ed44b922a38fce21c238,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 35b6dba76981b674682ea788ede7816b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d536555a075ed44b922a38fce21c238, type: 3}
 --- !u!1001 &1597263218
