@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: BorderOutline
   m_Shader: {fileID: 4800000, guid: 62505ee61d20098489c6f861ed25cce1, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _OUTLINEMODE_GRADIENT _OUTLINEPOSITION_OUTSIDE
-    _OUTLINESHAPE_FRAME _TILEMODE_STRETCH
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _OUTLINEMODE_SOLID _OUTLINEPOSITION_OUTSIDE
+    _OUTLINESHAPE_CONTOUR _TILEMODE_STRETCH
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -33,10 +33,10 @@ Material:
     - _Angle: 45
     - _ConnectedAlpha: 0
     - _OutlineEnabled: 0
-    - _OutlineMode: 1
+    - _OutlineMode: 0
     - _OutlinePosition: 2
-    - _OutlineShape: 1
-    - _Thickness: 138.38
+    - _OutlineShape: 0
+    - _Thickness: 10
     - _TileMode: 0
     - _Weight: 0.35
     m_Colors:
@@ -44,7 +44,7 @@ Material:
     - _GradientOutline1: {r: 1, g: 1, b: 1, a: 0}
     - _GradientOutline2: {r: 0, g: 0, b: 0, a: 0.6627451}
     - _ImageOutline: {r: 1, g: 1, b: 1, a: 1}
-    - _SolidOutline: {r: 0, g: 0, b: 0, a: 1}
+    - _SolidOutline: {r: 0, g: 0, b: 0, a: 0.69411767}
 --- !u!114 &1800166254752910641
 MonoBehaviour:
   m_ObjectHideFlags: 11

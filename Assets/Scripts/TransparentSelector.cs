@@ -8,7 +8,7 @@ public class TransparentSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Image>().alphaHitTestMinimumThreshold = 0.5f;
+        GetComponent<Image>().alphaHitTestMinimumThreshold = 0.1f;
     }
 
     // Update is called once per frame

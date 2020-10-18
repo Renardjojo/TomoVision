@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4687933797141092816}
   - component: {fileID: 4496094725980178021}
   - component: {fileID: 8094672506152307260}
+  - component: {fileID: 6013981050445006626}
   m_Layer: 5
   m_Name: RxObject
   m_TagString: Untagged
@@ -419,5 +420,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8d4b207579f4de43a696a6d83147447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnElemCombinSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &6013981050445006626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2825222508012653318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e539b84d77a3b65449c4ad5392a0c868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

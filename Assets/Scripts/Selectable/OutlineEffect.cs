@@ -16,9 +16,7 @@ public class OutlineEffect : MonoBehaviour
     }
 
     protected void Start()
-    {
-        image.alphaHitTestMinimumThreshold = 0.5f;
-    }
+    {}
 
     void Update()
     {}

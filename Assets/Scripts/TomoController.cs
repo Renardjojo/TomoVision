@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class TomoController : MonoBehaviour
 {
@@ -6,16 +7,17 @@ public class TomoController : MonoBehaviour
 
     [SerializeField]
     public GameObject TomoViewObject;
-    
 
     // Start is called before the first frame update
     void Start()
-    {    }
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TurnLeft()

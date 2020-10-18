@@ -10,6 +10,8 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
 
     public UnityEvent OnElemCombinSuccess;
 
+    public bool isHiden = true;
+
     void Awake()
     {
         outlineEffect = GetComponent<OutlineEffect>();
@@ -35,8 +37,16 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
         }
         else
         {
+            Debug.Log(GetComponent<Image>().color.ToString());
             GetComponent<Image>().color = new Color(255, 255, 255, 255);
         }
+
+        isHiden = bFlag;
+    }
+
+
+    private void Update() {
+        Debug.Log(isHiden + "   " + tag.ToString());
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -44,6 +54,21 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
         if (tag == eventData.lastPress.tag)
         {
             eventData.lastPress.GetComponent<Item>().ValidItem();
+            
+            for (int i = 0; i < transform.parent.parent.childCount; i++)
+            {
+                for (int j = 0; j < transform.parent.parent.GetChild(i).childCount; j++)
+                {
+                    /*Fucking game jam, asshole code*/
+                    if (transform.parent.parent.GetChild(i).GetChild(j).tag == tag)
+                    {
+                        transform.parent.parent.GetChild(i).GetChild(j).gameObject.SetActive(true);
+                        transform.parent.parent.GetChild(i).GetChild(j).GetComponent<RxObject>()?.Hide(false);
+                        //transform.parent.parent.GetChild(i).GetChild(j).gameObject.SetActive(false);
+                    }
+                }
+            }
+            
             Hide(false);
 
             OnElemCombinSuccess?.Invoke();
