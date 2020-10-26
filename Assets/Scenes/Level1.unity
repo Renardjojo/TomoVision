@@ -207,11 +207,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6440232839039719722, guid: 6d536555a075ed44b922a38fce21c238,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1f049d52cda9b914a88c68294d809d12, type: 3}
     - target: {fileID: 3332926075617979938, guid: 6d536555a075ed44b922a38fce21c238,
         type: 3}
       propertyPath: m_Name
@@ -322,6 +317,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6440232839039719722, guid: 6d536555a075ed44b922a38fce21c238,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f049d52cda9b914a88c68294d809d12, type: 3}
     - target: {fileID: 3332926073794475983, guid: 6d536555a075ed44b922a38fce21c238,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -724,11 +724,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3332926075617979933, guid: 6d536555a075ed44b922a38fce21c238,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 7065504692737032298, guid: 6d536555a075ed44b922a38fce21c238,
         type: 3}
       propertyPath: m_audioClip
@@ -744,6 +739,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 35b6dba76981b674682ea788ede7816b, type: 3}
+    - target: {fileID: 3332926075617979933, guid: 6d536555a075ed44b922a38fce21c238,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5270608985244425114, guid: 6d536555a075ed44b922a38fce21c238,
         type: 3}
       propertyPath: m_RootOrder
@@ -1827,6 +1827,51 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6705115643613354082, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705115643613354082, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705115643613354082, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705115643613354082, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705115643613354082, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705115643613354082, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317145290045406542, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317145290045406542, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6317145290045406542, guid: 33f1962312c26d04dae9440dd9eddd53,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f1962312c26d04dae9440dd9eddd53, type: 3}
 --- !u!224 &8496284529773283019 stripped
@@ -1956,3 +2001,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8496284529773283025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3500323189649954735, guid: 33f1962312c26d04dae9440dd9eddd53,
+    type: 3}
+  m_PrefabInstance: {fileID: 8496284529773283018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8496284529773283026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496284529773283025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0

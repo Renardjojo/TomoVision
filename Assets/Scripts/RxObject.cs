@@ -3,7 +3,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class RxObject : MonoBehaviour, IPointerDownHandler
+public class RxObject : MonoBehaviour
 {
     EventSystem eventSystem;
     OutlineEffect outlineEffect;
@@ -29,24 +29,26 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
         Hide(true);
     }
 
-    public void Hide(bool bFlag)
-    {
-        if (bFlag)
-        {
-            GetComponent<Image>().color = Color.black;
-        }
-        else
-        {
-            Debug.Log(GetComponent<Image>().color.ToString());
-            GetComponent<Image>().color = new Color(255, 255, 255, 255);
-        }
+    public GameObject lastSelectedGameObject;
+    private GameObject currentSelectedGameObject_Recent;
+
+    private void GetLastGameObjectSelected() {
+            if (eventSystem.currentSelectedGameObject != currentSelectedGameObject_Recent) {
+                lastSelectedGameObject = currentSelectedGameObject_Recent;
+                currentSelectedGameObject_Recent = eventSystem.currentSelectedGameObject;
+            }
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    void Update()
     {
-        if (tag == eventData.lastPress.tag)
+        GetLastGameObjectSelected();
+    }
+
+    public void OnPointerDown()
+    {
+        if (tag == lastSelectedGameObject.tag)
         {
-            eventData.lastPress.GetComponent<Item>().ValidItem();
+            lastSelectedGameObject.GetComponent<Item>().ValidItem();
             
             for (int i = 0; i < transform.parent.parent.childCount; i++)
             {
@@ -65,6 +67,19 @@ public class RxObject : MonoBehaviour, IPointerDownHandler
             Hide(false);
 
             OnElemCombinSuccess?.Invoke();
+        }
+    }
+
+    public void Hide(bool bFlag)
+    {
+        if (bFlag)
+        {
+            GetComponent<Image>().color = Color.black;
+        }
+        else
+        {
+            Debug.Log(GetComponent<Image>().color.ToString());
+            GetComponent<Image>().color = new Color(255, 255, 255, 255);
         }
     }
 }
